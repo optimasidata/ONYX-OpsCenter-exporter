@@ -1,18 +1,8 @@
 # ONYX Metric Exporter for Oracle OpsCenter 12C
 
-[Change oracleoc password](/notes/001_change-password-oracleoc.md)
-
-[Enable access to Oracle DB/embedded](/notes/002_access-oracleDB-opscenter.md)
-
-[Set Unlimited session to OC user access](/notes/003_update-profile-session.md)
-
-[Set max Process for Onyx Exporter](/notes/004_update-process.md)
-
 
 NOTES: 
-- 3rd development sebagai servlet dengan query pada *view* dan sebagai exporter prometheus java client
-- 2nd development sebagai servlet dengan query pada *view*
-- 1st development as springboot application
+- private only
 
 ![OpsCenter Exportert](notes/capture1.png "OpsCenter Exporter")
 inject dari database
@@ -30,8 +20,8 @@ graphing with grafana
 ```yaml
 scrape_configs:
   - job_name: 'opscenter'
-    scrape_interval: 60s
-    scrape_timeout: 60s
+    scrape_interval: 10s
+    scrape_timeout: 10s
     scheme: https
     metrics_path: /onyx/metrics
     tls_config:
