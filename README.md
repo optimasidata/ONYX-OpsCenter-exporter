@@ -2,10 +2,9 @@
 
 
 NOTES: 
-- private only
+- internal development only
 
 ![OpsCenter Exportert](notes/capture1.png "OpsCenter Exporter")
-inject dari database
 
 <img src="notes/capture3.png" width="400"><img src="notes/capture4.png" width="300">
 
